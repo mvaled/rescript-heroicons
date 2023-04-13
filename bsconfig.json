@@ -1,26 +1,31 @@
 {
-    "$schema": "https://raw.githubusercontent.com/rescript-lang/rescript-compiler/master/docs/docson/build-schema.json",
-    "name": "rescript-heroicons",
-    "jsx": {
-        "version": 4,
-        "mode": "automatic"
+  "$schema": "https://raw.githubusercontent.com/rescript-lang/rescript-compiler/master/docs/docson/build-schema.json",
+  "name": "rescript-heroicons",
+  "jsx": {
+    "version": 4,
+    "mode": "automatic"
+  },
+  "sources": [
+    {
+      "dir": "src"
     },
-    "sources": {
-        "dir": "src",
-        "subdirs": true
-    },
-    "bsc-flags": [
-        "-bs-super-errors"
-    ],
-    "package-specs": [
-        {
-            "module": "es6",
-            "in-source": true
-        }
-    ],
-    "suffix": ".bs.js",
-    "namespace": "Heroicons",
-    "bs-dependencies": [
-        "@rescript/react"
-    ]
+    {
+      "dir": "tests",
+      "type": "dev"
+    }
+  ],
+  "bsc-flags": [
+    "-bs-super-errors"
+  ],
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "namespace": "Heroicons",
+  "bs-dependencies": [
+    "@rescript/react"
+  ]
 }

@@ -13,5 +13,4 @@ nohup.out
 .merlin
 package-lock.json
 yarn-error.log
-
 *.bs.js
