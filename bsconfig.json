@@ -4,11 +4,19 @@
   "reason": {
     "react-jsx": 3
   },
-  "sources": {
-    "dir": "src",
-    "subdirs": true
-  },
-  "bsc-flags": ["-bs-super-errors"],
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    },
+    {
+      "dir": "tests",
+      "type": "dev"
+    }
+  ],
+  "bsc-flags": [
+    "-bs-super-errors"
+  ],
   "package-specs": [
     {
       "module": "es6",
@@ -17,5 +25,7 @@
   ],
   "suffix": ".bs.js",
   "namespace": "Heroicons",
-  "bs-dependencies": ["@rescript/react"]
+  "bs-dependencies": [
+    "@rescript/react"
+  ]
 }
