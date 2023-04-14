@@ -360,6 +360,13 @@ module ChevronUpIcon = {
   external make: props => React.element = "render"
 }
 
+module ChevronUpDownIcon = {
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/outline") @scope("ChevronUpDownIcon")
+  external make: props => React.element = "render"
+}
+
 module ChipIcon = {
   type props = JsxDOM.domProps
 
