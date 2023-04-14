@@ -26,7 +26,7 @@
   },
   "scripts": {
     "build": "rescript build -with-deps && esbuild --target=chrome80,firefox80 --bundle tests/index.bs.js --outfile=tests/index.js",
-    "run": "rescript build -with-deps && esbuild tests/index.bs.js --bundle --target=firefox80,chrome80 --servedir=tests --outfile=tests/index.js ",
+    "run": "rescript build -with-deps && esbuild tests/index.bs.js --bundle --target=firefox80,chrome80 --servedir=tests --outfile=tests/index.js",
     "clean": "rescript clean",
     "watch": "rescript build -w",
     "iv": "npm --no-git-tag-version version patch",

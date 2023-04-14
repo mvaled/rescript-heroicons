@@ -1,1146 +1,1606 @@
 module AcademicCapIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "AcademicCapIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("AcademicCapIcon")
+  external make: props => React.element = "render"
 }
 
 module AdjustmentsIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "AdjustmentsIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("AdjustmentsIcon")
+  external make: props => React.element = "render"
 }
 
 module AnnotationIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "AnnotationIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("AnnotationIcon")
+  external make: props => React.element = "render"
 }
 
 module ArchiveIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArchiveIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArchiveIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowCircleDownIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowCircleDownIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowCircleDownIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowCircleLeftIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowCircleLeftIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowCircleLeftIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowCircleRightIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowCircleRightIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowCircleRightIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowCircleUpIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowCircleUpIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowCircleUpIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowDownIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowDownIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowDownIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowLeftIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowLeftIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowLeftIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowNarrowDownIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowNarrowDownIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowNarrowDownIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowNarrowLeftIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowNarrowLeftIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowNarrowLeftIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowNarrowRightIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowNarrowRightIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowNarrowRightIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowNarrowUpIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowNarrowUpIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowNarrowUpIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowRightIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowRightIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowRightIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowSmDownIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowSmDownIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowSmDownIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowSmLeftIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowSmLeftIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowSmLeftIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowSmRightIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowSmRightIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowSmRightIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowSmUpIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowSmUpIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowSmUpIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowUpIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowUpIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowUpIcon")
+  external make: props => React.element = "render"
 }
 
 module ArrowsExpandIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ArrowsExpandIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ArrowsExpandIcon")
+  external make: props => React.element = "render"
 }
 
 module AtSymbolIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "AtSymbolIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("AtSymbolIcon")
+  external make: props => React.element = "render"
 }
 
 module BackspaceIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "BackspaceIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("BackspaceIcon")
+  external make: props => React.element = "render"
 }
 module BadgeCheckIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "BadgeCheckIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("BadgeCheckIcon")
+  external make: props => React.element = "render"
 }
 
 module BanIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "BanIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("BanIcon")
+  external make: props => React.element = "render"
 }
 module BeakerIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "BeakerIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("BeakerIcon")
+  external make: props => React.element = "render"
 }
 
 module BellIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "BellIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("BellIcon")
+  external make: props => React.element = "render"
 }
 
 module BookOpenIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "BookOpenIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("BookOpenIcon")
+  external make: props => React.element = "render"
 }
 
 module BookmarkAltIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "BookmarkAltIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("BookmarkAltIcon")
+  external make: props => React.element = "render"
 }
 
 module BookmarkIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "BookmarkIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("BookmarkIcon")
+  external make: props => React.element = "render"
 }
 
 module BriefcaseIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "BriefcaseIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("BriefcaseIcon")
+  external make: props => React.element = "render"
 }
 
 module CakeIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CakeIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CakeIcon")
+  external make: props => React.element = "render"
 }
 
 module CalculatorIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CalculatorIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CalculatorIcon")
+  external make: props => React.element = "render"
 }
 
 module CalendarIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CalendarIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CalendarIcon")
+  external make: props => React.element = "render"
 }
 
 module CameraIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CameraIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CameraIcon")
+  external make: props => React.element = "render"
 }
 
 module CashIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CashIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CashIcon")
+  external make: props => React.element = "render"
 }
 
 module ChartBarIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ChartBarIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ChartBarIcon")
+  external make: props => React.element = "render"
 }
 
 module ChartPieIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ChartPieIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ChartPieIcon")
+  external make: props => React.element = "render"
 }
 
 module ChartSquareBarIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ChartSquareBarIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ChartSquareBarIcon")
+  external make: props => React.element = "render"
 }
 
 module ChatAlt2Icon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ChatAlt2Icon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ChatAlt2Icon")
+  external make: props => React.element = "render"
 }
 
 module ChatAltIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ChatAltIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ChatAltIcon")
+  external make: props => React.element = "render"
 }
 
 module ChatIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ChatIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ChatIcon")
+  external make: props => React.element = "render"
 }
 
 module CheckCircleIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CheckCircleIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CheckCircleIcon")
+  external make: props => React.element = "render"
 }
 
 module CheckIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CheckIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CheckIcon")
+  external make: props => React.element = "render"
 }
 
 module ChevronDoubleDownIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ChevronDoubleDownIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ChevronDoubleDownIcon")
+  external make: props => React.element = "render"
 }
 
 module ChevronDoubleLeftIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ChevronDoubleLeftIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ChevronDoubleLeftIcon")
+  external make: props => React.element = "render"
 }
 
 module ChevronDoubleRightIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ChevronDoubleRightIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ChevronDoubleRightIcon")
+  external make: props => React.element = "render"
 }
 
 module ChevronDoubleUpIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ChevronDoubleUpIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ChevronDoubleUpIcon")
+  external make: props => React.element = "render"
 }
 
 module ChevronDownIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ChevronDownIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ChevronDownIcon")
+  external make: props => React.element = "render"
 }
 
 module ChevronLeftIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ChevronLeftIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ChevronLeftIcon")
+  external make: props => React.element = "render"
 }
 
 module ChevronRightIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ChevronRightIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ChevronRightIcon")
+  external make: props => React.element = "render"
 }
 
 module ChevronUpIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ChevronUpIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ChevronUpIcon")
+  external make: props => React.element = "render"
 }
 
 module ChipIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ChipIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ChipIcon")
+  external make: props => React.element = "render"
 }
 
 module ClipboardCheckIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ClipboardCheckIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ClipboardCheckIcon")
+  external make: props => React.element = "render"
 }
 
 module ClipboardCopyIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ClipboardCopyIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ClipboardCopyIcon")
+  external make: props => React.element = "render"
 }
 
 module ClipboardIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ClipboardIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ClipboardIcon")
+  external make: props => React.element = "render"
 }
 
 module ClipboardListIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ClipboardListIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ClipboardListIcon")
+  external make: props => React.element = "render"
 }
 
 module ClockIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ClockIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ClockIcon")
+  external make: props => React.element = "render"
 }
 
 module CloudDownloadIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CloudDownloadIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CloudDownloadIcon")
+  external make: props => React.element = "render"
 }
 
 module CloudIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CloudIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CloudIcon")
+  external make: props => React.element = "render"
 }
 
 module CloudUploadIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CloudUploadIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CloudUploadIcon")
+  external make: props => React.element = "render"
 }
 
 module CodeIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CodeIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CodeIcon")
+  external make: props => React.element = "render"
 }
 
 module CogIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CogIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CogIcon")
+  external make: props => React.element = "render"
 }
 
 module CollectionIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CollectionIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CollectionIcon")
+  external make: props => React.element = "render"
 }
 
 module ColorSwatchIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ColorSwatchIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ColorSwatchIcon")
+  external make: props => React.element = "render"
 }
 
 module CreditCardIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CreditCardIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CreditCardIcon")
+  external make: props => React.element = "render"
 }
 
 module CubeIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CubeIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CubeIcon")
+  external make: props => React.element = "render"
 }
 
 module CubeTransparentIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CubeTransparentIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CubeTransparentIcon")
+  external make: props => React.element = "render"
 }
 
 module CurrencyBangladeshiIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CurrencyBangladeshiIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CurrencyBangladeshiIcon")
+  external make: props => React.element = "render"
 }
 
 module CurrencyDollarIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CurrencyDollarIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CurrencyDollarIcon")
+  external make: props => React.element = "render"
 }
 
 module CurrencyEuroIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CurrencyEuroIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CurrencyEuroIcon")
+  external make: props => React.element = "render"
 }
 
 module CurrencyPoundIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CurrencyPoundIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CurrencyPoundIcon")
+  external make: props => React.element = "render"
 }
 
 module CurrencyRupeeIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CurrencyRupeeIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CurrencyRupeeIcon")
+  external make: props => React.element = "render"
 }
 
 module CurrencyYenIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CurrencyYenIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CurrencyYenIcon")
+  external make: props => React.element = "render"
 }
 
 module CursorClickIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "CursorClickIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("CursorClickIcon")
+  external make: props => React.element = "render"
 }
 
 module DatabaseIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DatabaseIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DatabaseIcon")
+  external make: props => React.element = "render"
 }
 
 module DesktopComputerIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DesktopComputerIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DesktopComputerIcon")
+  external make: props => React.element = "render"
 }
 
 module DeviceMobileIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DeviceMobileIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DeviceMobileIcon")
+  external make: props => React.element = "render"
 }
 
 module DeviceTabletIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DeviceTabletIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DeviceTabletIcon")
+  external make: props => React.element = "render"
 }
 
 module DocumentAddIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DocumentAddIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DocumentAddIcon")
+  external make: props => React.element = "render"
 }
 
 module DocumentDownloadIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DocumentDownloadIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DocumentDownloadIcon")
+  external make: props => React.element = "render"
 }
 
 module DocumentDuplicateIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DocumentDuplicateIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DocumentDuplicateIcon")
+  external make: props => React.element = "render"
 }
 
 module DocumentIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DocumentIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DocumentIcon")
+  external make: props => React.element = "render"
 }
 
 module DocumentRemoveIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DocumentRemoveIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DocumentRemoveIcon")
+  external make: props => React.element = "render"
 }
 
 module DocumentReportIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DocumentReportIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DocumentReportIcon")
+  external make: props => React.element = "render"
 }
 
 module DocumentSearchIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DocumentSearchIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DocumentSearchIcon")
+  external make: props => React.element = "render"
 }
 
 module DocumentTextIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DocumentTextIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DocumentTextIcon")
+  external make: props => React.element = "render"
 }
 
 module DotsCircleHorizontalIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DotsCircleHorizontalIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DotsCircleHorizontalIcon")
+  external make: props => React.element = "render"
 }
 
 module DotsHorizontalIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DotsHorizontalIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DotsHorizontalIcon")
+  external make: props => React.element = "render"
 }
 
 module DotsVerticalIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DotsVerticalIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DotsVerticalIcon")
+  external make: props => React.element = "render"
 }
 
 module DownloadIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DownloadIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DownloadIcon")
+  external make: props => React.element = "render"
 }
 
 module DuplicateIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "DuplicateIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("DuplicateIcon")
+  external make: props => React.element = "render"
 }
 
 module EmojiHappyIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "EmojiHappyIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("EmojiHappyIcon")
+  external make: props => React.element = "render"
 }
 
 module EmojiSadIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "EmojiSadIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("EmojiSadIcon")
+  external make: props => React.element = "render"
 }
 
 module ExclamationCircleIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ExclamationCircleIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ExclamationCircleIcon")
+  external make: props => React.element = "render"
 }
 
 module ExclamationIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ExclamationIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ExclamationIcon")
+  external make: props => React.element = "render"
 }
 
 module ExternalLinkIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ExternalLinkIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ExternalLinkIcon")
+  external make: props => React.element = "render"
 }
 
 module EyeIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "EyeIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("EyeIcon")
+  external make: props => React.element = "render"
 }
 
 module EyeOffIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "EyeOffIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("EyeOffIcon")
+  external make: props => React.element = "render"
 }
 
 module FastForwardIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "FastForwardIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("FastForwardIcon")
+  external make: props => React.element = "render"
 }
 
 module FilmIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "FilmIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("FilmIcon")
+  external make: props => React.element = "render"
 }
 
 module FilterIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "FilterIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("FilterIcon")
+  external make: props => React.element = "render"
 }
 
 module FingerPrintIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "FingerPrintIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("FingerPrintIcon")
+  external make: props => React.element = "render"
 }
 
 module FireIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "FireIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("FireIcon")
+  external make: props => React.element = "render"
 }
 
 module FlagIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "FlagIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("FlagIcon")
+  external make: props => React.element = "render"
 }
 module FolderAddIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "FolderAddIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("FolderAddIcon")
+  external make: props => React.element = "render"
 }
 
 module FolderDownloadIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "FolderDownloadIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("FolderDownloadIcon")
+  external make: props => React.element = "render"
 }
 
 module FolderIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "FolderIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("FolderIcon")
+  external make: props => React.element = "render"
 }
 
 module FolderOpenIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "FolderOpenIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("FolderOpenIcon")
+  external make: props => React.element = "render"
 }
 
 module FolderRemoveIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "FolderRemoveIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("FolderRemoveIcon")
+  external make: props => React.element = "render"
 }
 
 module GiftIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "GiftIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("GiftIcon")
+  external make: props => React.element = "render"
 }
 
 module GlobeAltIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "GlobeAltIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("GlobeAltIcon")
+  external make: props => React.element = "render"
 }
 
 module GlobeIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "GlobeIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("GlobeIcon")
+  external make: props => React.element = "render"
 }
 
 module HandIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "HandIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("HandIcon")
+  external make: props => React.element = "render"
 }
 
 module HashtagIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "HashtagIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("HashtagIcon")
+  external make: props => React.element = "render"
 }
 
 module HeartIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "HeartIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("HeartIcon")
+  external make: props => React.element = "render"
 }
 
 module HomeIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "HomeIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("HomeIcon")
+  external make: props => React.element = "render"
 }
 
 module IdentificationIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "IdentificationIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("IdentificationIcon")
+  external make: props => React.element = "render"
 }
 
 module InboxIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "InboxIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("InboxIcon")
+  external make: props => React.element = "render"
 }
 
 module InboxInIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "InboxInIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("InboxInIcon")
+  external make: props => React.element = "render"
 }
 
 module InformationCircleIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "InformationCircleIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("InformationCircleIcon")
+  external make: props => React.element = "render"
 }
 
 module KeyIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "KeyIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("KeyIcon")
+  external make: props => React.element = "render"
 }
 
 module LibraryIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "LibraryIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("LibraryIcon")
+  external make: props => React.element = "render"
 }
 
 module LightBulbIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "LightBulbIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("LightBulbIcon")
+  external make: props => React.element = "render"
 }
 
 module LightningBoltIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "LightningBoltIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("LightningBoltIcon")
+  external make: props => React.element = "render"
 }
 
 module LinkIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "LinkIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("LinkIcon")
+  external make: props => React.element = "render"
 }
 
 module LocationMarkerIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "LocationMarkerIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("LocationMarkerIcon")
+  external make: props => React.element = "render"
 }
 
 module LockClosedIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "LockClosedIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("LockClosedIcon")
+  external make: props => React.element = "render"
 }
 
 module LockOpenIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "LockOpenIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("LockOpenIcon")
+  external make: props => React.element = "render"
 }
 
 module LoginIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "LoginIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("LoginIcon")
+  external make: props => React.element = "render"
 }
 
 module LogoutIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "LogoutIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("LogoutIcon")
+  external make: props => React.element = "render"
 }
 
 module MailIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "MailIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("MailIcon")
+  external make: props => React.element = "render"
 }
 
 module MailOpenIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "MailOpenIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("MailOpenIcon")
+  external make: props => React.element = "render"
 }
 
 module MapIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "MapIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("MapIcon")
+  external make: props => React.element = "render"
 }
 
 module MenuAlt1Icon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "MenuAlt1Icon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("MenuAlt1Icon")
+  external make: props => React.element = "render"
 }
 
 module MenuAlt2Icon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "MenuAlt2Icon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("MenuAlt2Icon")
+  external make: props => React.element = "render"
 }
 
 module MenuAlt3Icon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "MenuAlt3Icon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("MenuAlt3Icon")
+  external make: props => React.element = "render"
 }
 
 module MenuAlt4Icon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "MenuAlt4Icon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("MenuAlt4Icon")
+  external make: props => React.element = "render"
 }
 
 module MenuIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "MenuIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("MenuIcon")
+  external make: props => React.element = "render"
 }
 
 module MicrophoneIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "MicrophoneIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("MicrophoneIcon")
+  external make: props => React.element = "render"
 }
 
 module MinusCircleIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "MinusCircleIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("MinusCircleIcon")
+  external make: props => React.element = "render"
 }
 
 module MinusIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "MinusIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("MinusIcon")
+  external make: props => React.element = "render"
 }
 
 module MinusSmIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "MinusSmIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("MinusSmIcon")
+  external make: props => React.element = "render"
 }
 
 module MoonIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "MoonIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("MoonIcon")
+  external make: props => React.element = "render"
 }
 
 module MusicNoteIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "MusicNoteIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("MusicNoteIcon")
+  external make: props => React.element = "render"
 }
 
 module NewspaperIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "NewspaperIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("NewspaperIcon")
+  external make: props => React.element = "render"
 }
 
 module OfficeBuildingIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "OfficeBuildingIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("OfficeBuildingIcon")
+  external make: props => React.element = "render"
 }
 
 module PaperAirplaneIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PaperAirplaneIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PaperAirplaneIcon")
+  external make: props => React.element = "render"
 }
 
 module PaperClipIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PaperClipIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PaperClipIcon")
+  external make: props => React.element = "render"
 }
 
 module PauseIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PauseIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PauseIcon")
+  external make: props => React.element = "render"
 }
 
 module PencilAltIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PencilAltIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PencilAltIcon")
+  external make: props => React.element = "render"
 }
 
 module PencilIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PencilIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PencilIcon")
+  external make: props => React.element = "render"
 }
 
 module PhoneIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PhoneIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PhoneIcon")
+  external make: props => React.element = "render"
 }
 
 module PhoneIncomingIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PhoneIncomingIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PhoneIncomingIcon")
+  external make: props => React.element = "render"
 }
 
 module PhoneMissedCallIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PhoneMissedCallIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PhoneMissedCallIcon")
+  external make: props => React.element = "render"
 }
 
 module PhoneOutgoingIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PhoneOutgoingIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PhoneOutgoingIcon")
+  external make: props => React.element = "render"
 }
 
 module PhotographIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PhotographIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PhotographIcon")
+  external make: props => React.element = "render"
 }
 
 module PlayIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PlayIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PlayIcon")
+  external make: props => React.element = "render"
 }
 
 module PlusCircleIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PlusCircleIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PlusCircleIcon")
+  external make: props => React.element = "render"
 }
 
 module PlusIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PlusIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PlusIcon")
+  external make: props => React.element = "render"
 }
 
 module PlusSmIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PlusSmIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PlusSmIcon")
+  external make: props => React.element = "render"
 }
 
 module PresentationChartBarIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PresentationChartBarIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PresentationChartBarIcon")
+  external make: props => React.element = "render"
 }
 
 module PresentationChartLineIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PresentationChartLineIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PresentationChartLineIcon")
+  external make: props => React.element = "render"
 }
 
 module PrinterIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PrinterIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PrinterIcon")
+  external make: props => React.element = "render"
 }
 
 module PuzzleIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "PuzzleIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("PuzzleIcon")
+  external make: props => React.element = "render"
 }
 
 module QrcodeIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "QrcodeIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("QrcodeIcon")
+  external make: props => React.element = "render"
 }
 
 module QuestionMarkCircleIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "QuestionMarkCircleIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("QuestionMarkCircleIcon")
+  external make: props => React.element = "render"
 }
 
 module ReceiptRefundIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ReceiptRefundIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ReceiptRefundIcon")
+  external make: props => React.element = "render"
 }
 
 module ReceiptTaxIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ReceiptTaxIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ReceiptTaxIcon")
+  external make: props => React.element = "render"
 }
 
 module RefreshIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "RefreshIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("RefreshIcon")
+  external make: props => React.element = "render"
 }
 
 module ReplyIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ReplyIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ReplyIcon")
+  external make: props => React.element = "render"
 }
 
 module RewindIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "RewindIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("RewindIcon")
+  external make: props => React.element = "render"
 }
 
 module RssIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "RssIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("RssIcon")
+  external make: props => React.element = "render"
 }
 
 module SaveAsIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "SaveAsIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("SaveAsIcon")
+  external make: props => React.element = "render"
 }
 
 module SaveIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "SaveIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("SaveIcon")
+  external make: props => React.element = "render"
 }
 
 module ScaleIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ScaleIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ScaleIcon")
+  external make: props => React.element = "render"
 }
 
 module ScissorsIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ScissorsIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ScissorsIcon")
+  external make: props => React.element = "render"
 }
 
 module SearchCircleIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "SearchCircleIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("SearchCircleIcon")
+  external make: props => React.element = "render"
 }
 
 module SearchIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "SearchIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("SearchIcon")
+  external make: props => React.element = "render"
 }
 
 module SelectorIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "SelectorIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("SelectorIcon")
+  external make: props => React.element = "render"
 }
 
 module ServerIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ServerIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ServerIcon")
+  external make: props => React.element = "render"
 }
 
 module ShareIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ShareIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ShareIcon")
+  external make: props => React.element = "render"
 }
 
 module ShieldCheckIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ShieldCheckIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ShieldCheckIcon")
+  external make: props => React.element = "render"
 }
 
 module ShieldExclamationIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ShieldExclamationIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ShieldExclamationIcon")
+  external make: props => React.element = "render"
 }
 
 module ShoppingBagIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ShoppingBagIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ShoppingBagIcon")
+  external make: props => React.element = "render"
 }
 
 module ShoppingCartIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ShoppingCartIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ShoppingCartIcon")
+  external make: props => React.element = "render"
 }
 
 module SortAscendingIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "SortAscendingIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("SortAscendingIcon")
+  external make: props => React.element = "render"
 }
 
 module SortDescendingIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "SortDescendingIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("SortDescendingIcon")
+  external make: props => React.element = "render"
 }
 
 module SparklesIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "SparklesIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("SparklesIcon")
+  external make: props => React.element = "render"
 }
 
 module SpeakerphoneIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "SpeakerphoneIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("SpeakerphoneIcon")
+  external make: props => React.element = "render"
 }
 
 module StarIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "StarIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("StarIcon")
+  external make: props => React.element = "render"
 }
 
 module StatusOfflineIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "StatusOfflineIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("StatusOfflineIcon")
+  external make: props => React.element = "render"
 }
 
 module StatusOnlineIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "StatusOnlineIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("StatusOnlineIcon")
+  external make: props => React.element = "render"
 }
 
 module StopIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "StopIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("StopIcon")
+  external make: props => React.element = "render"
 }
 
 module SunIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "SunIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("SunIcon")
+  external make: props => React.element = "render"
 }
 
 module SupportIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "SupportIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("SupportIcon")
+  external make: props => React.element = "render"
 }
 
 module SwitchHorizontalIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "SwitchHorizontalIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("SwitchHorizontalIcon")
+  external make: props => React.element = "render"
 }
 
 module SwitchVerticalIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "SwitchVerticalIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("SwitchVerticalIcon")
+  external make: props => React.element = "render"
 }
 
 module TableIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "TableIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("TableIcon")
+  external make: props => React.element = "render"
 }
 
 module TagIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "TagIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("TagIcon")
+  external make: props => React.element = "render"
 }
 
 module TemplateIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "TemplateIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("TemplateIcon")
+  external make: props => React.element = "render"
 }
 
 module TerminalIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "TerminalIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("TerminalIcon")
+  external make: props => React.element = "render"
 }
 
 module ThumbDownIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ThumbDownIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ThumbDownIcon")
+  external make: props => React.element = "render"
 }
 
 module ThumbUpIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ThumbUpIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ThumbUpIcon")
+  external make: props => React.element = "render"
 }
 
 module TicketIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "TicketIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("TicketIcon")
+  external make: props => React.element = "render"
 }
 
 module TranslateIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "TranslateIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("TranslateIcon")
+  external make: props => React.element = "render"
 }
 
 module TrashIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "TrashIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("TrashIcon")
+  external make: props => React.element = "render"
 }
 
 module TrendingDownIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "TrendingDownIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("TrendingDownIcon")
+  external make: props => React.element = "render"
 }
 
 module TrendingUpIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "TrendingUpIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("TrendingUpIcon")
+  external make: props => React.element = "render"
 }
 
 module TruckIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "TruckIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("TruckIcon")
+  external make: props => React.element = "render"
 }
 
 module UploadIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "UploadIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("UploadIcon")
+  external make: props => React.element = "render"
 }
 
 module UserAddIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "UserAddIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("UserAddIcon")
+  external make: props => React.element = "render"
 }
 
 module UserCircleIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "UserCircleIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("UserCircleIcon")
+  external make: props => React.element = "render"
 }
 
 module UserGroupIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "UserGroupIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("UserGroupIcon")
+  external make: props => React.element = "render"
 }
 
 module UserIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "UserIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("UserIcon")
+  external make: props => React.element = "render"
 }
 
 module UserRemoveIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "UserRemoveIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("UserRemoveIcon")
+  external make: props => React.element = "render"
 }
 
 module UsersIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "UsersIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("UsersIcon")
+  external make: props => React.element = "render"
 }
 
 module VariableIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "VariableIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("VariableIcon")
+  external make: props => React.element = "render"
 }
 
 module VideoCameraIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "VideoCameraIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("VideoCameraIcon")
+  external make: props => React.element = "render"
 }
 
 module ViewBoardsIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ViewBoardsIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ViewBoardsIcon")
+  external make: props => React.element = "render"
 }
 
 module ViewGridAddIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ViewGridAddIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ViewGridAddIcon")
+  external make: props => React.element = "render"
 }
 
 module ViewGridIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ViewGridIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ViewGridIcon")
+  external make: props => React.element = "render"
 }
 
 module ViewListIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ViewListIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ViewListIcon")
+  external make: props => React.element = "render"
 }
 
 module VolumeOffIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "VolumeOffIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("VolumeOffIcon")
+  external make: props => React.element = "render"
 }
 
 module VolumeUpIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "VolumeUpIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("VolumeUpIcon")
+  external make: props => React.element = "render"
 }
 
 module WifiIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "WifiIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("WifiIcon")
+  external make: props => React.element = "render"
 }
 
 module XCircleIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "XCircleIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("XCircleIcon")
+  external make: props => React.element = "render"
 }
 
 module XIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "XIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("XIcon")
+  external make: props => React.element = "render"
 }
 
 module ZoomInIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ZoomInIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ZoomInIcon")
+  external make: props => React.element = "render"
 }
 
 module ZoomOutIcon = {
-  @module("@heroicons/react/24/solid") @react.component
-  external make: (~className: string=?) => React.element = "ZoomOutIcon"
+  type props = JsxDOM.domProps
+
+  @module("@heroicons/react/24/solid") @scope("ZoomOutIcon")
+  external make: props => React.element = "render"
 }
