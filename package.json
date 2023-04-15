@@ -1,6 +1,6 @@
 {
   "name": "@kaiko.io/rescript-heroicons-react",
-  "version": "2.0",
+  "version": "2.0.0",
   "description": "Unofficial ReScript binding to @heroicons/react",
   "author": "Kaiko Systems GmbH",
   "contributors": [
