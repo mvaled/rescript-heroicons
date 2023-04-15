@@ -4,8 +4,14 @@ stages:
 
 .x-compile: &with-compilation-script
   image: node
-  script:
+  script: &build-script
+    - yarn install
     - npm run build
+  cache:
+    paths:
+      - node_modules
+    key: $CI_JOB_NAME
+
 
 .x-when-mr: &when-merge-request
   interruptible: true
@@ -47,12 +53,11 @@ pages:
     - docker
   stage: deploy
   script:
-    - |
-      set -x
-      npm run build
-      mkdir public
-      cp tests/index.html public/
-      cp tests/index.js public/
+    - yarn install
+    - npm run build
+    - mkdir public
+    - cp tests/index.html public/
+    - cp tests/index.js public/
   cache:
     paths:
       - node_modules
