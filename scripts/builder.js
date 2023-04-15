@@ -24,10 +24,10 @@ module ${module} = {
 
 generateNs(
   "@heroicons/react/24/outline",
-  path.join(path.dirname(__dirname), "src", "Outline.res")
+  path.join(path.dirname(__dirname), "src", "HeroIcons__Outline.res")
 )
 
 generateNs(
   "@heroicons/react/24/solid",
-  path.join(path.dirname(__dirname), "src", "Solid.res")
+  path.join(path.dirname(__dirname), "src", "HeroIcons__Solid.res")
 )

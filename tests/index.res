@@ -32,13 +32,13 @@ module App = {
                   className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"
                 />
                 <button alt="Copy to clipboard">
-                  <Outline.ClipboardDocumentIcon className="w-full h-full" />
+                  <HeroIcons.Outline.ClipboardDocumentIcon className="w-full h-full" />
                 </button>
               </>
             | false =>
               <CopyToClipboard text={`<${ns}.${name} />`} onCopy>
                 <button alt="Copy to clipboard">
-                  <Outline.ClipboardDocumentIcon className="w-full h-full" />
+                  <HeroIcons.Outline.ClipboardDocumentIcon className="w-full h-full" />
                 </button>
               </CopyToClipboard>
             }}
@@ -110,7 +110,7 @@ module App = {
             onChange={onSearchChange}
           />
           <div className="absolute inset-y-0 right-2 flex items-center">
-            <Outline.MagnifyingGlassIcon className="w-5 h-5" />
+            <HeroIcons.Outline.MagnifyingGlassIcon className="w-5 h-5" />
           </div>
         </div>
       </div>
