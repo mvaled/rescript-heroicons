@@ -40,6 +40,7 @@ compile:
 
 
 pages:
+  needs: []
   image: node:18
   tags:
     - docker
