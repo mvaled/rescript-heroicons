@@ -9,14 +9,14 @@ type entry<'item> = {
   positions: array<int>,
 }
 type casing = [
-  | @as("smart-case") #smart
-  | @as("case-sensitive") #sensitive
-  | @as("case-insensitive") #insensitive
+  | #"smart-smart"
+  | #"case-sensitive"
+  | #"case-insensitive"
 ]
 
 type options<'item> = {
-  selector: 'item => string,
-  casing: option<casing>,
+  selector?: 'item => string,
+  casing?: casing,
 }
 
 %%private(
@@ -24,12 +24,6 @@ type options<'item> = {
   external _make: (array<'item>, ~options: options<'item>, unit) => t<'item> = "Fzf"
 )
 let make = (items, ~selector: 'item => string) =>
-  _make(
-    items,
-    ~options={
-      selector,
-      casing: Some(#insensitive),
-    },
-  )
+  _make(items, ~options={selector, casing: #"case-insensitive"}, ())
 
 @send external find: (t<'item>, string) => array<entry<'item>> = "find"

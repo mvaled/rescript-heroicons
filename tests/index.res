@@ -83,7 +83,7 @@ module App = {
     let (state, setState) = React.useState(_ => {
       entries,
       query: None,
-      fzf: Fzf.make(entries, ~selector=({words}) => words, ()),
+      fzf: Fzf.make(entries, ~selector=({words}) => words),
     })
 
     let shown = switch state.query {
