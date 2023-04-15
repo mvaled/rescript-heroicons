@@ -1,16 +1,27 @@
 {
-  "name": "rescript-heroicons",
-  "version": "0.0.3",
-  "description": "ReScript binding to Heroicons",
-  "author": "Nyi Nyi Than <nyinyithann@gmail.com>",
+  "name": "@kaiko.io/rescript-heroicons-react",
+  "version": "2.0",
+  "description": "Unofficial ReScript binding to @heroicons/react",
+  "author": "Kaiko Systems GmbH",
+  "contributors": [
+    {
+      "name": "Nyi Nyi Than",
+      "email": "nyinyithann@gmail.com"
+    },
+    {
+      "name": "Manuel Vazquez Acosta",
+      "url": "https://twitter.com/mvaled"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nyinyithann/rescript-heroicons.git"
+    "url": "https://gitlab.com/kaiko-systems/rescript-heroicons-react"
   },
   "license": "MIT",
   "keywords": [
     "rescript",
     "heroicons",
+    "react",
     "tailwindCSS",
     "tailwind"
   ],
@@ -21,10 +32,13 @@
   },
   "devDependencies": {
     "esbuild": "^0.17.16",
+    "fzf": "^0.5.1",
     "react-dom": "^18.2.0",
-    "rescript": "^10.1.4"
+    "rescript": "^10.1.4",
+    "rescript-webapi": "^0.7.0"
   },
   "scripts": {
+    "generate": "node scripts/builder.js; node scripts/inject-tests.js",
     "build": "rescript build -with-deps && esbuild --target=chrome80,firefox80 --bundle tests/index.bs.js --outfile=tests/index.js",
     "run": "rescript build -with-deps && esbuild tests/index.bs.js --bundle --target=firefox80,chrome80 --servedir=tests --outfile=tests/index.js",
     "clean": "rescript clean",

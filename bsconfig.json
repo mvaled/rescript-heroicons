@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/rescript-lang/rescript-compiler/master/docs/docson/build-schema.json",
-  "name": "rescript-heroicons",
+  "name": "@kaiko.io/rescript-heroicons-react",
   "jsx": {
     "version": 4,
     "mode": "automatic"
@@ -24,8 +24,11 @@
     }
   ],
   "suffix": ".bs.js",
-  "namespace": "Heroicons",
+  "namespace": "HeroIcons",
   "bs-dependencies": [
     "@rescript/react"
+  ],
+  "bs-dev-dependencies": [
+    "rescript-webapi"
   ]
 }

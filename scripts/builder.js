@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 
-
 function generateNs(ns, where) {
   const Mod = require(ns);
   let fh = fs.openSync(where, "w");
