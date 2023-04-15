@@ -8,7 +8,7 @@ module App = {
 
       React.useEffect1(() => {
         if state.animating {
-          Js.Global.setTimeout(() => setState(_ => {animating: false}), 2000)->ignore
+          Js.Global.setTimeout(() => setState(_ => {animating: false}), 1000)->ignore
         }
         None
       }, [state.animating])
@@ -24,24 +24,35 @@ module App = {
           className="relative aspect-h-1 aspect-w-1 w-full p-20 bg-white
                      xl:aspect-h-8 xl:aspect-w-7">
           children
-          <div className="absolute bottom-4 right-4 w-6 h-6">
+          <div className="absolute bottom-4 right-4 w-6 h-6 peer">
             {switch state.animating {
             | true =>
               <>
                 <span
                   className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"
                 />
-                <button alt="Copy to clipboard">
-                  <HeroIcons.Outline.ClipboardDocumentIcon className="w-full h-full" />
-                </button>
+                <HeroIcons.Outline.ClipboardDocumentIcon className="w-full h-full" />
               </>
             | false =>
               <CopyToClipboard text={`<${ns}.${name} />`} onCopy>
                 <button alt="Copy to clipboard">
+                  <span className="sr-only"> {React.string("Copy to clipboard")} </span>
                   <HeroIcons.Outline.ClipboardDocumentIcon className="w-full h-full" />
                 </button>
               </CopyToClipboard>
             }}
+          </div>
+          <div
+            ariaHidden=true
+            role="tooltip"
+            className="absolute z-10 inline-block px-3 py-2 text-sm font-medium
+                       text-gray-500
+                       bottom-2
+                       transition-all duration-300
+                       invisible peer-hover:visible
+                       opacity-0 peer-hover:opacity-100
+                       right-20 peer-hover:right-10">
+            {React.string("Copy to clipboard")}
           </div>
         </div>
         <h3 className="text-center font-mono mt-2 text-sm text-gray-700"> {React.string(name)} </h3>
@@ -94,7 +105,6 @@ module App = {
     }
 
     <div className="font-mono">
-      <h1 className="font-mono text-2xl text-center m-8"> {React.string("HeroIcons")} </h1>
       /// Search input
       <div className="mb-10">
         <div className="w-1/2 m-auto relative mt-2 rounded-md shadow-sm">

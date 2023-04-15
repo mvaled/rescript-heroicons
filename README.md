@@ -6,6 +6,8 @@ Heroicons 2 and rescript 10.1 with JSX 4.
 To avoid clashes with the old package, the namespace was changed to
 'HeroIcons'.
 
+[Live gallery](https://kaiko-systems.gitlab.io/rescript-heroicons-react/).
+
 
 ## Overview
 
@@ -39,6 +41,17 @@ The binding has the following dependencies, and they have to be installed.
 
 - [@rescript/react](https://www.npmjs.com/package/@rescript/react)
 - [@heroicons/react](https://www.npmjs.com/package/@heroicons/react)
+
+
+### Development
+
+1. Update the dependencies, if needed, and install: `yarn install`.
+
+2. Update the script `scripts/builder.js` to adjust to new versions, etc.
+
+3. Generate the modules with `npm run generate`
+
+4. Run the test server `npm run run` and go to http://localhost:8000 to watch the live examples.
 
 
 ### Original author
