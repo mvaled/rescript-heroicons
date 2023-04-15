@@ -4,55 +4,32 @@ module App = {
 
     @react.component
     let make = (~ns: string, ~name: string, ~children: React.element) => {
-      let (state, setState) = React.useState(() => {animating: false})
-
-      React.useEffect1(() => {
-        if state.animating {
-          Js.Global.setTimeout(() => setState(_ => {animating: false}), 1000)->ignore
-        }
-        None
-      }, [state.animating])
-
-      let onCopy = (_, result) =>
-        if result {
-          setState(_ => {animating: true})
-        }
-
       <div className="group bg-gray-200 rounded-lg p-1 overflow-hidden">
         <h3 className="text-center font-mono mt-1 text-sm text-gray-700"> {React.string(ns)} </h3>
         <div
           className="relative aspect-h-1 aspect-w-1 w-full p-20 bg-white
                      xl:aspect-h-8 xl:aspect-w-7">
           children
-          <div className="absolute bottom-4 right-4 w-6 h-6 peer">
-            {switch state.animating {
-            | true =>
-              <>
-                <span
-                  className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"
-                />
-                <HeroIcons.Outline.ClipboardDocumentIcon className="w-full h-full" />
-              </>
-            | false =>
-              <CopyToClipboard text={`<${ns}.${name} />`} onCopy>
-                <button alt="Copy to clipboard">
-                  <span className="sr-only"> {React.string("Copy to clipboard")} </span>
-                  <HeroIcons.Outline.ClipboardDocumentIcon className="w-full h-full" />
-                </button>
-              </CopyToClipboard>
-            }}
-          </div>
           <div
-            ariaHidden=true
-            role="tooltip"
-            className="absolute z-10 inline-block px-3 py-2 text-sm font-medium
-                       text-gray-500
-                       bottom-2
-                       transition-all duration-300
-                       invisible peer-hover:visible
-                       opacity-0 peer-hover:opacity-100
-                       right-20 peer-hover:right-10">
-            {React.string("Copy to clipboard")}
+            className="absolute
+                       transition-all w-full
+                       left-0
+                       bottom-0 group-hover:bottom-2
+                       invisible group-hover:visible
+                       opacity-0 group-hover:opacity-100
+                       grid gap-2 grid-cols-2">
+            <CopyToClipboard text={`<${ns}.${name} />`}>
+              <button
+                className="p-2 pr-3 pl-3 rounded bg-gray-100 ring-1 ring-slate-900/5 shadow-lg">
+                {React.string("Copy JSX")}
+              </button>
+            </CopyToClipboard>
+            <CopyToClipboard text={`${ns}.${name}`}>
+              <button
+                className="p-2 pr-4 pl-4 rounded bg-gray-100 ring-1 ring-slate-900/5 shadow-lg">
+                {React.string("Copy name")}
+              </button>
+            </CopyToClipboard>
           </div>
         </div>
         <h3 className="text-center font-mono mt-2 text-sm text-gray-700"> {React.string(name)} </h3>
