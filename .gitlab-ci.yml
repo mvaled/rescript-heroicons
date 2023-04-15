@@ -1,0 +1,82 @@
+stages:
+  - compile
+  - deploy
+
+.x-compile: &with-compilation-script
+  image: node
+  script:
+    - make compile
+
+.x-when-mr: &when-merge-request
+  interruptible: true
+  only:
+    - merge_requests
+
+.x-when-stable: &when-in-stable
+  only:
+    - main
+
+.x-when-stable-or-mr: &when-stable-or-merging
+  interruptible: true
+  only:
+    - main
+    - merge_requests
+
+lint:
+  <<: *when-stable-or-merging
+  stage: compile
+  image: node
+  tags:
+    - docker
+  script:
+    - |
+      make format
+      touched=$(git status --porcelain | wc -l) || touched=0
+      if [ $touched -gt 0 ]; then
+          git status
+          exit 1
+      fi
+
+check that we can compile the whole thing before merging:
+  <<: *with-compilation-script
+  <<: *when-merge-request
+  stage: compile
+  tags:
+    - docker
+
+compile:
+  <<: *with-compilation-script
+  <<: *when-in-stable
+  interruptible: true
+  stage: compile
+  tags:
+    - docker
+
+
+pages:
+  image: node:18
+  tags:
+    - docker
+  stage: deploy
+  script:
+    - |
+      set -x
+      npm run build
+      mkdir public
+      cp tests/index.html public/
+      cp tests/index.js public/
+  cache:
+    paths:
+      - node_modules
+    key: $CI_JOB_NAME
+  artifacts:
+    paths:
+      - public
+  except:
+    - schedules
+  only:
+    refs:
+      - main
+    variables:
+      - $CI_SERVER_HOST == "gitlab.com"
+  
