@@ -1,16 +1,52 @@
 module App = {
   module Icon = {
+    type state = {animating: bool}
+
     @react.component
-    let make = (~ns: string, ~name: string, ~children: React.element) =>
+    let make = (~ns: string, ~name: string, ~children: React.element) => {
+      let (state, setState) = React.useState(() => {animating: false})
+
+      React.useEffect1(() => {
+        if state.animating {
+          Js.Global.setTimeout(() => setState(_ => {animating: false}), 2000)->ignore
+        }
+        None
+      }, [state.animating])
+
+      let onCopy = (_, result) =>
+        if result {
+          setState(_ => {animating: true})
+        }
+
       <div className="group bg-gray-200 rounded-lg p-1 overflow-hidden">
         <h3 className="text-center font-mono mt-1 text-sm text-gray-700"> {React.string(ns)} </h3>
         <div
-          className="aspect-h-1 aspect-w-1 w-full p-20 bg-white
+          className="relative aspect-h-1 aspect-w-1 w-full p-20 bg-white
                      xl:aspect-h-8 xl:aspect-w-7">
           children
+          <div className="absolute bottom-4 right-4 w-6 h-6">
+            {switch state.animating {
+            | true =>
+              <>
+                <span
+                  className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"
+                />
+                <button alt="Copy to clipboard">
+                  <Outline.ClipboardDocumentIcon className="w-full h-full" />
+                </button>
+              </>
+            | false =>
+              <CopyToClipboard text={`<${ns}.${name} />`} onCopy>
+                <button alt="Copy to clipboard">
+                  <Outline.ClipboardDocumentIcon className="w-full h-full" />
+                </button>
+              </CopyToClipboard>
+            }}
+          </div>
         </div>
         <h3 className="text-center font-mono mt-2 text-sm text-gray-700"> {React.string(name)} </h3>
       </div>
+    }
   }
 
   type entry = {ns: string, name: string, el: React.element, words: string}
