@@ -28,24 +28,30 @@
   "dependencies": {
     "@heroicons/react": "^2.0",
     "@rescript/react": "^0.11.0",
-    "react": "^18.0"
+    "react": "^18.0",
+    "rescript": "^10.1.4"
   },
   "devDependencies": {
-    "esbuild": "^0.17.16",
+    "@jihchi/vite-plugin-rescript": "^5.3.0",
+    "vite": "^4.2.0",
     "fzf": "^0.5.1",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
-    "rescript": "^10.1.4",
     "rescript-webapi": "^0.7.0"
   },
   "scripts": {
     "generate": "node scripts/builder.js; node scripts/inject-tests.js",
-    "build": "rescript build -with-deps && esbuild --target=chrome80,firefox80 --bundle tests/index.bs.js --outfile=tests/index.js",
-    "run": "rescript build -with-deps && esbuild tests/index.bs.js --bundle --target=firefox80,chrome80 --servedir=tests --outfile=tests/index.js",
-    "clean": "rescript clean",
-    "watch": "rescript build -w",
-    "iv": "npm --no-git-tag-version version patch",
-    "verdaccio-publish": "npm run iv & npm publish --registry http://localhost:4873",
-    "verdaccio-unpublish": "npm unpublish --force --registry http://localhost:4873/  rescript-heroicons"
-  }
+    "build": "vite build",
+    "run": "vite",
+    "clean": "rescript clean"
+  },
+  "files": [
+    "src",
+    "scripts",
+    "index.html",
+    "README.md",
+    "lib",
+    "tests",
+    "dist"
+  ]
 }
