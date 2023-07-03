@@ -55,9 +55,7 @@ pages:
   script:
     - yarn install
     - npm run build
-    - mkdir public
-    - cp tests/index.html public/
-    - cp tests/index.js public/
+    - mv dist public
   cache:
     paths:
       - node_modules
