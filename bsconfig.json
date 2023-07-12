@@ -27,8 +27,5 @@
   ],
   "bs-dependencies": [
     "@rescript/react"
-  ],
-  "bs-dev-dependencies": [
-    "rescript-webapi"
   ]
 }
