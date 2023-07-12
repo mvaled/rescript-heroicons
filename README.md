@@ -1,12 +1,16 @@
 # Kaiko's ReScript binding to @heroicons/react
 
 This is a fork of [Jazz's original work](#original-author), it was updated to
-Heroicons 2 and rescript 10.1 with JSX 4.
+Heroicons 2 and Rescript 10/11 with JSX 4.
 
 To avoid clashes with the old package, the namespace was changed to
 'HeroIcons'.
 
 [Live gallery](https://kaiko-systems.gitlab.io/rescript-heroicons-react/).
+
+## Version support
+
+Version 2.x supports Rescript 10.  Version 3.x supports Rescript 11.
 
 
 ## Overview
