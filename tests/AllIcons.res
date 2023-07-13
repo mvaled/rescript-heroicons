@@ -1,4 +1,6 @@
 /// *** AUTOMATICALLY GENERATED FILE!
+@@uncurried
+
 let icons: array<(string, string, React.element)> = [
    ("HeroIcons.Outline", "AcademicCapIcon", <HeroIcons.Outline.AcademicCapIcon />),
    ("HeroIcons.Outline", "AdjustmentsHorizontalIcon", <HeroIcons.Outline.AdjustmentsHorizontalIcon />),

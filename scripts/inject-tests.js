@@ -19,6 +19,8 @@ const outline = findIcons("@heroicons/react/24/outline", "HeroIcons.Outline");
 const solid = findIcons("@heroicons/react/24/solid", "HeroIcons.Solid");
 
 fs.writeSync(fh, `/// *** AUTOMATICALLY GENERATED FILE!
+@@uncurried
+
 let icons: array<(string, string, React.element)> = [
 `);
 
