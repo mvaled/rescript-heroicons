@@ -354,10 +354,10 @@ react@^18.0:
   dependencies:
     loose-envify "^1.1.0"
 
-rescript@11.0.0-beta.4:
-  version "11.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/rescript/-/rescript-11.0.0-beta.4.tgz#07433d6d0d7118bec73954241d7a61a32c6e1dbf"
-  integrity sha512-MqTyh9LhDmA++2nemZF+amEO3kOg6a5tR43DuLVocILOAvR17UZcVcS6czGaW6+zOxvPOXVv2i/xiiWCJIDmvw==
+rescript@11.0.0-rc.8:
+  version "11.0.0-rc.8"
+  resolved "https://registry.yarnpkg.com/rescript/-/rescript-11.0.0-rc.8.tgz#60c94034731cb894e09feacf10f1adb20efc7fb1"
+  integrity sha512-KFeCeJ2tYtmSLD24o0WtWr7YLO22DflCWL31/L9Q8HGdHTLEhDNa+R0tnoyZ8B6wwm6bpNG8xosu1H4O+o7LGA==
 
 rollup@^3.21.0:
   version "3.26.0"
