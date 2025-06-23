@@ -1,0 +1,31 @@
+{
+    "$schema": "https://raw.githubusercontent.com/rescript-lang/rescript-compiler/master/docs/docson/build-schema.json",
+    "name": "@kaiko.io/rescript-heroicons-react",
+    "jsx": {
+        "version": 4,
+        "mode": "automatic"
+    },
+    "sources": [
+        {
+            "dir": "src"
+        },
+        {
+            "dir": "tests",
+            "type": "dev"
+        }
+    ],
+    "bsc-flags": [
+        "-bs-super-errors"
+    ],
+    "package-specs": [
+        {
+            "module": "esmodule"
+        },
+        {
+            "module": "commonjs"
+        }
+    ],
+    "bs-dependencies": [
+        "@rescript/react"
+    ]
+}

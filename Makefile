@@ -22,7 +22,7 @@ clean:
 .PHONY: clean
 
 run: compile
-	vite 
+	vite
 .PHONY: run
 
 

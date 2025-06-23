@@ -126,10 +126,10 @@
     execa "^5.1.1"
     npm-run-path "^4.0.1"
 
-"@rescript/react@0.12.0-alpha.3":
-  version "0.12.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.12.0-alpha.3.tgz#45b94e5b1f24776e74c2dfb7da38ed2c02a4651d"
-  integrity sha512-/S1uj77RPDzuLg3Ofb8KKU3Vppqy97/vF6bBdBZ+saIO9bpHVlsmmJyJG8QXjGZKE+aMynrrR3Tj4+9+5OzLdw==
+"@rescript/react@0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.12.0.tgz#d72f0561ec9c4ae04c5db0a752087190ba7d3f40"
+  integrity sha512-EBLsf5rD7sJOjgfLLGwuLw/hONszc3UtYnIVgv7OdTyUNR41/m4deVm62PI0agvr3kWakXz4KchKRSd+19/bRA==
 
 ansi-styles@^4.1.0:
   version "4.3.0"
@@ -354,10 +354,10 @@ react@^18.0:
   dependencies:
     loose-envify "^1.1.0"
 
-rescript@11.0.0-rc.8:
-  version "11.0.0-rc.8"
-  resolved "https://registry.yarnpkg.com/rescript/-/rescript-11.0.0-rc.8.tgz#60c94034731cb894e09feacf10f1adb20efc7fb1"
-  integrity sha512-KFeCeJ2tYtmSLD24o0WtWr7YLO22DflCWL31/L9Q8HGdHTLEhDNa+R0tnoyZ8B6wwm6bpNG8xosu1H4O+o7LGA==
+rescript@^11.1.4:
+  version "11.1.4"
+  resolved "https://registry.yarnpkg.com/rescript/-/rescript-11.1.4.tgz#9a42ebc4fc5363707e39cef5b3188160b63bee42"
+  integrity sha512-0bGU0bocihjSC6MsE3TMjHjY0EUpchyrREquLS8VsZ3ohSMD+VHUEwimEfB3kpBI1vYkw3UFZ3WD8R28guz/Vw==
 
 rollup@^3.21.0:
   version "3.26.0"
