@@ -41,3 +41,11 @@ preview:
 format:
 	rescript format -all
 .PHONY: format
+
+ALPHA ?= $(shell cat package.json | jq '.version' | grep '\-alpha' >/dev/null && echo "--tag alpha" || echo "")
+BETA ?= $(shell cat package.json | jq '.version' | grep '\-beta' >/dev/null && echo "--tag beta" || echo "")
+RC ?= $(shell cat package.json | jq '.version' | grep '\-rc' >/dev/null && echo "--tag rc" || echo "")
+
+publish: build
+	yarn publish --access public $(ALPHA) $(BETA) $(RC)
+.PHONY: publish
