@@ -51,7 +51,7 @@
         "README.md",
         "lib",
         "tests",
-        "bsconfig.json",
+        "rescript.json",
         "dist"
     ]
 }
