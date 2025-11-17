@@ -70,8 +70,18 @@ module ArrowLeftCircleIcon = {
   external make: JsxDOM.domProps => React.element = "render"
 }
 
+module ArrowLeftEndOnRectangleIcon = {
+  @module("@heroicons/react/24/solid") @scope("ArrowLeftEndOnRectangleIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
 module ArrowLeftOnRectangleIcon = {
   @module("@heroicons/react/24/solid") @scope("ArrowLeftOnRectangleIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module ArrowLeftStartOnRectangleIcon = {
+  @module("@heroicons/react/24/solid") @scope("ArrowLeftStartOnRectangleIcon")
   external make: JsxDOM.domProps => React.element = "render"
 }
 
@@ -115,8 +125,18 @@ module ArrowRightCircleIcon = {
   external make: JsxDOM.domProps => React.element = "render"
 }
 
+module ArrowRightEndOnRectangleIcon = {
+  @module("@heroicons/react/24/solid") @scope("ArrowRightEndOnRectangleIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
 module ArrowRightOnRectangleIcon = {
   @module("@heroicons/react/24/solid") @scope("ArrowRightOnRectangleIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module ArrowRightStartOnRectangleIcon = {
+  @module("@heroicons/react/24/solid") @scope("ArrowRightStartOnRectangleIcon")
   external make: JsxDOM.domProps => React.element = "render"
 }
 
@@ -157,6 +177,46 @@ module ArrowTrendingDownIcon = {
 
 module ArrowTrendingUpIcon = {
   @module("@heroicons/react/24/solid") @scope("ArrowTrendingUpIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module ArrowTurnDownLeftIcon = {
+  @module("@heroicons/react/24/solid") @scope("ArrowTurnDownLeftIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module ArrowTurnDownRightIcon = {
+  @module("@heroicons/react/24/solid") @scope("ArrowTurnDownRightIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module ArrowTurnLeftDownIcon = {
+  @module("@heroicons/react/24/solid") @scope("ArrowTurnLeftDownIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module ArrowTurnLeftUpIcon = {
+  @module("@heroicons/react/24/solid") @scope("ArrowTurnLeftUpIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module ArrowTurnRightDownIcon = {
+  @module("@heroicons/react/24/solid") @scope("ArrowTurnRightDownIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module ArrowTurnRightUpIcon = {
+  @module("@heroicons/react/24/solid") @scope("ArrowTurnRightUpIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module ArrowTurnUpLeftIcon = {
+  @module("@heroicons/react/24/solid") @scope("ArrowTurnUpLeftIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module ArrowTurnUpRightIcon = {
+  @module("@heroicons/react/24/solid") @scope("ArrowTurnUpRightIcon")
   external make: JsxDOM.domProps => React.element = "render"
 }
 
@@ -335,6 +395,11 @@ module BellIcon = {
   external make: JsxDOM.domProps => React.element = "render"
 }
 
+module BoldIcon = {
+  @module("@heroicons/react/24/solid") @scope("BoldIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
 module BoltSlashIcon = {
   @module("@heroicons/react/24/solid") @scope("BoltSlashIcon")
   external make: JsxDOM.domProps => React.element = "render"
@@ -402,6 +467,11 @@ module CakeIcon = {
 
 module CalculatorIcon = {
   @module("@heroicons/react/24/solid") @scope("CalculatorIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module CalendarDateRangeIcon = {
+  @module("@heroicons/react/24/solid") @scope("CalendarDateRangeIcon")
   external make: JsxDOM.domProps => React.element = "render"
 }
 
@@ -680,6 +750,11 @@ module DeviceTabletIcon = {
   external make: JsxDOM.domProps => React.element = "render"
 }
 
+module DivideIcon = {
+  @module("@heroicons/react/24/solid") @scope("DivideIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
 module DocumentArrowDownIcon = {
   @module("@heroicons/react/24/solid") @scope("DocumentArrowDownIcon")
   external make: JsxDOM.domProps => React.element = "render"
@@ -697,6 +772,36 @@ module DocumentChartBarIcon = {
 
 module DocumentCheckIcon = {
   @module("@heroicons/react/24/solid") @scope("DocumentCheckIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module DocumentCurrencyBangladeshiIcon = {
+  @module("@heroicons/react/24/solid") @scope("DocumentCurrencyBangladeshiIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module DocumentCurrencyDollarIcon = {
+  @module("@heroicons/react/24/solid") @scope("DocumentCurrencyDollarIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module DocumentCurrencyEuroIcon = {
+  @module("@heroicons/react/24/solid") @scope("DocumentCurrencyEuroIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module DocumentCurrencyPoundIcon = {
+  @module("@heroicons/react/24/solid") @scope("DocumentCurrencyPoundIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module DocumentCurrencyRupeeIcon = {
+  @module("@heroicons/react/24/solid") @scope("DocumentCurrencyRupeeIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module DocumentCurrencyYenIcon = {
+  @module("@heroicons/react/24/solid") @scope("DocumentCurrencyYenIcon")
   external make: JsxDOM.domProps => React.element = "render"
 }
 
@@ -752,6 +857,11 @@ module EnvelopeOpenIcon = {
 
 module EnvelopeIcon = {
   @module("@heroicons/react/24/solid") @scope("EnvelopeIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module EqualsIcon = {
+  @module("@heroicons/react/24/solid") @scope("EqualsIcon")
   external make: JsxDOM.domProps => React.element = "render"
 }
 
@@ -880,6 +990,21 @@ module GlobeEuropeAfricaIcon = {
   external make: JsxDOM.domProps => React.element = "render"
 }
 
+module H1Icon = {
+  @module("@heroicons/react/24/solid") @scope("H1Icon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module H2Icon = {
+  @module("@heroicons/react/24/solid") @scope("H2Icon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module H3Icon = {
+  @module("@heroicons/react/24/solid") @scope("H3Icon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
 module HandRaisedIcon = {
   @module("@heroicons/react/24/solid") @scope("HandRaisedIcon")
   external make: JsxDOM.domProps => React.element = "render"
@@ -940,6 +1065,11 @@ module InformationCircleIcon = {
   external make: JsxDOM.domProps => React.element = "render"
 }
 
+module ItalicIcon = {
+  @module("@heroicons/react/24/solid") @scope("ItalicIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
 module KeyIcon = {
   @module("@heroicons/react/24/solid") @scope("KeyIcon")
   external make: JsxDOM.domProps => React.element = "render"
@@ -957,6 +1087,11 @@ module LifebuoyIcon = {
 
 module LightBulbIcon = {
   @module("@heroicons/react/24/solid") @scope("LightBulbIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module LinkSlashIcon = {
+  @module("@heroicons/react/24/solid") @scope("LinkSlashIcon")
   external make: JsxDOM.domProps => React.element = "render"
 }
 
@@ -1055,6 +1190,11 @@ module NoSymbolIcon = {
   external make: JsxDOM.domProps => React.element = "render"
 }
 
+module NumberedListIcon = {
+  @module("@heroicons/react/24/solid") @scope("NumberedListIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
 module PaintBrushIcon = {
   @module("@heroicons/react/24/solid") @scope("PaintBrushIcon")
   external make: JsxDOM.domProps => React.element = "render"
@@ -1087,6 +1227,11 @@ module PencilSquareIcon = {
 
 module PencilIcon = {
   @module("@heroicons/react/24/solid") @scope("PencilIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module PercentBadgeIcon = {
+  @module("@heroicons/react/24/solid") @scope("PercentBadgeIcon")
   external make: JsxDOM.domProps => React.element = "render"
 }
 
@@ -1275,6 +1420,11 @@ module SignalIcon = {
   external make: JsxDOM.domProps => React.element = "render"
 }
 
+module SlashIcon = {
+  @module("@heroicons/react/24/solid") @scope("SlashIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
 module SparklesIcon = {
   @module("@heroicons/react/24/solid") @scope("SparklesIcon")
   external make: JsxDOM.domProps => React.element = "render"
@@ -1325,6 +1475,11 @@ module StopIcon = {
   external make: JsxDOM.domProps => React.element = "render"
 }
 
+module StrikethroughIcon = {
+  @module("@heroicons/react/24/solid") @scope("StrikethroughIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
 module SunIcon = {
   @module("@heroicons/react/24/solid") @scope("SunIcon")
   external make: JsxDOM.domProps => React.element = "render"
@@ -1367,6 +1522,11 @@ module TruckIcon = {
 
 module TvIcon = {
   @module("@heroicons/react/24/solid") @scope("TvIcon")
+  external make: JsxDOM.domProps => React.element = "render"
+}
+
+module UnderlineIcon = {
+  @module("@heroicons/react/24/solid") @scope("UnderlineIcon")
   external make: JsxDOM.domProps => React.element = "render"
 }
 
