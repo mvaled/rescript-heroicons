@@ -1,5 +1,3 @@
-@@uncurried
-
 module AcademicCapIcon = {
   @module("@heroicons/react/24/outline") @scope("AcademicCapIcon")
   external make: JsxDOM.domProps => React.element = "render"
