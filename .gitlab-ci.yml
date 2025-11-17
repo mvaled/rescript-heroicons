@@ -1,3 +1,6 @@
+variables: &globals
+  NODE_IMAGE: "node:24"
+
 stages:
   - compile
   - deploy
@@ -48,7 +51,7 @@ compile:
 pages:
   interruptible: true
   needs: []
-  image: node:18
+  image: $NODE_IMAGE
   tags:
     - docker
   stage: deploy
@@ -70,4 +73,3 @@ pages:
       - main
     variables:
       - $CI_SERVER_HOST == "gitlab.com"
-  
