@@ -1,0 +1,204 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom Dark Theme Styles */
+@layer base {
+  :root {
+    --color-bg-primary: theme('colors.light.bg.primary');
+    --color-bg-secondary: theme('colors.light.bg.secondary');
+    --color-text-primary: theme('colors.light.text.primary');
+    --color-text-secondary: theme('colors.light.text.secondary');
+  }
+
+  .dark {
+    --color-bg-primary: theme('colors.dark.bg.primary');
+    --color-bg-secondary: theme('colors.dark.bg.secondary');
+    --color-text-primary: theme('colors.dark.text.primary');
+    --color-text-secondary: theme('colors.dark.text.secondary');
+  }
+
+  /* Smooth transitions for theme switching */
+  * {
+    @apply transition-colors duration-200;
+  }
+
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-dark-bg-primary text-dark-text-primary;
+  }
+
+  /* Custom scrollbar for dark theme */
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-bg-secondary;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark-border-secondary rounded-full hover:bg-dark-border-accent;
+  }
+
+  /* Code block styling */
+  pre, code {
+    @apply font-mono;
+  }
+
+  pre {
+    @apply bg-dark-bg-code border border-dark-border-primary rounded-lg overflow-x-auto;
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.dark.border.secondary') theme('colors.dark.bg.code');
+  }
+
+  code {
+    @apply text-dark-accent-cyan text-sm;
+  }
+
+  /* Link styling */
+  a {
+    @apply text-dark-accent-blue hover:text-dark-accent-purple transition-colors duration-200;
+    text-decoration: none;
+    position: relative;
+  }
+
+  a:hover {
+    @apply underline underline-offset-4 decoration-dark-accent-purple/50;
+  }
+
+  /* Selection colors */
+  ::selection {
+    @apply bg-dark-accent-purple/30 text-dark-text-primary;
+  }
+
+  ::-moz-selection {
+    @apply bg-dark-accent-purple/30 text-dark-text-primary;
+  }
+}
+
+@layer components {
+  /* Card component */
+  .card {
+    @apply bg-dark-bg-secondary border border-dark-border-primary rounded-xl p-6
+           shadow-lg hover:shadow-xl hover:border-dark-border-secondary
+           transition-all duration-300;
+  }
+
+  /* Button components */
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200
+           active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2
+           focus:ring-offset-dark-bg-primary disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-dark-accent-blue text-white hover:bg-dark-accent-blue/90
+           focus:ring-dark-accent-blue shadow-glow-sm hover:shadow-glow;
+  }
+
+  .btn-secondary {
+    @apply btn bg-dark-bg-tertiary text-dark-text-primary
+           border border-dark-border-secondary hover:bg-dark-bg-secondary
+           hover:border-dark-border-accent focus:ring-dark-border-accent;
+  }
+
+  /* Hero icon container styling */
+  .icon-container {
+    @apply p-4 bg-dark-bg-tertiary border border-dark-border-primary
+           rounded-lg hover:bg-dark-bg-secondary hover:border-dark-accent-blue/50
+           hover:shadow-glow-sm transition-all duration-200 cursor-pointer
+           group relative overflow-hidden;
+  }
+
+  .icon-container::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-dark-accent-blue/0
+           via-dark-accent-purple/10 to-dark-accent-blue/0
+           translate-x-[-100%] group-hover:translate-x-[100%]
+           transition-transform duration-700 ease-in-out;
+  }
+
+  /* Section headers */
+  .section-header {
+    @apply text-2xl md:text-3xl font-bold bg-gradient-to-r
+           from-dark-accent-blue via-dark-accent-purple to-dark-accent-cyan
+           bg-clip-text text-transparent animate-fade-in;
+  }
+
+  /* Code snippet container */
+  .code-snippet {
+    @apply bg-dark-bg-code border border-dark-border-primary rounded-lg
+           p-4 my-4 overflow-x-auto relative group;
+  }
+
+  .code-snippet:hover {
+    @apply border-dark-border-secondary shadow-inner-glow;
+  }
+
+  /* Terminal-like appearance for code blocks */
+  .terminal {
+    @apply bg-gradient-to-b from-dark-bg-code to-dark-bg-secondary
+           border border-dark-border-primary rounded-lg p-4
+           font-mono text-sm text-dark-text-secondary;
+  }
+
+  .terminal::before {
+    content: '';
+    @apply block w-full h-8 -mt-4 -mx-4 mb-4 px-4
+           bg-gradient-to-b from-dark-bg-tertiary to-dark-bg-secondary
+           border-b border-dark-border-primary flex items-center;
+  }
+
+  /* Glow effect for important elements */
+  .glow-effect {
+    @apply relative;
+  }
+
+  .glow-effect::after {
+    content: '';
+    @apply absolute inset-0 rounded-lg bg-gradient-to-r
+           from-dark-accent-blue via-dark-accent-purple to-dark-accent-cyan
+           opacity-20 blur-xl -z-10 animate-glow;
+  }
+}
+
+@layer utilities {
+  /* Text gradient utilities */
+  .text-gradient {
+    @apply bg-gradient-to-r from-dark-accent-blue via-dark-accent-purple to-dark-accent-cyan
+           bg-clip-text text-transparent;
+  }
+
+  .text-gradient-reverse {
+    @apply bg-gradient-to-l from-dark-accent-blue via-dark-accent-purple to-dark-accent-cyan
+           bg-clip-text text-transparent;
+  }
+
+  /* Background mesh gradient */
+  .bg-mesh {
+    background-image:
+      radial-gradient(at 40% 20%, theme('colors.dark.accent.blue / 10%') 0px, transparent 50%),
+      radial-gradient(at 80% 0%, theme('colors.dark.accent.purple / 10%') 0px, transparent 50%),
+      radial-gradient(at 0% 50%, theme('colors.dark.accent.emerald / 10%') 0px, transparent 50%),
+      radial-gradient(at 80% 50%, theme('colors.dark.accent.amber / 10%') 0px, transparent 50%),
+      radial-gradient(at 0% 100%, theme('colors.dark.accent.rose / 10%') 0px, transparent 50%);
+  }
+
+  /* Subtle animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}

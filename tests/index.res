@@ -4,35 +4,35 @@ module App = {
 
     @react.component
     let make = (~ns: string, ~name: string, ~children: React.element) => {
-      <div className="group bg-gray-200 rounded-lg p-1 overflow-hidden">
-        <h3 className="text-center font-mono mt-1 text-sm text-gray-700"> {React.string(ns)} </h3>
-        <div
-          className="relative aspect-h-1 aspect-w-1 w-full p-20 bg-white
-                     xl:aspect-h-8 xl:aspect-w-7">
-          children
+      <div className="group border border-gray-200 dark:border-gray-700 rounded-lg p-3 hover:shadow-lg transition-shadow duration-200">
+        <div className="flex flex-col items-center">
+          <div className="w-full aspect-square flex items-center justify-center p-3 mb-2">
+            <div className="w-10 h-10">
+              {children}
+            </div>
+          </div>
+          <h3 className="text-center font-mono text-xs text-gray-700 dark:text-gray-300 mb-2 truncate w-full px-1">
+            {React.string(name)}
+          </h3>
           <div
-            className="absolute
-                       transition-all w-full
-                       left-0
-                       bottom-0 group-hover:bottom-2
+            className="w-full transition-all
                        invisible group-hover:visible
                        opacity-0 group-hover:opacity-100
                        grid gap-2 grid-cols-2">
             <CopyToClipboard text={`<${ns}.${name} />`}>
               <button
-                className="p-2 pr-3 pl-3 rounded bg-gray-100 ring-1 ring-slate-900/5 shadow-lg">
+                className="px-2 py-1 text-xs rounded bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 transition-colors">
                 {React.string("Copy JSX")}
               </button>
             </CopyToClipboard>
             <CopyToClipboard text={`${ns}.${name}`}>
               <button
-                className="p-2 pr-4 pl-4 rounded bg-gray-100 ring-1 ring-slate-900/5 shadow-lg">
+                className="px-2 py-1 text-xs rounded bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 transition-colors">
                 {React.string("Copy name")}
               </button>
             </CopyToClipboard>
           </div>
         </div>
-        <h3 className="text-center font-mono mt-2 text-sm text-gray-700"> {React.string(name)} </h3>
       </div>
     }
   }
@@ -90,25 +90,32 @@ module App = {
             name="query"
             autoComplete="false"
             className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20
-               text-gray-900 ring-1 ring-inset ring-gray-300
-               placeholder:text-gray-400 focus:ring-1 focus:ring-inset
-               focus:ring-indigo-100 sm:text-sm sm:leading-6"
+               bg-white dark:bg-gray-800
+               text-gray-900 dark:text-gray-100
+               ring-1 ring-inset ring-gray-300 dark:ring-gray-600
+               placeholder:text-gray-400 dark:placeholder:text-gray-500
+               focus:ring-1 focus:ring-inset
+               focus:ring-indigo-100 dark:focus:ring-indigo-900 sm:text-sm sm:leading-6"
             placeholder="Filter"
             onChange={onSearchChange}
           />
           <div className="absolute inset-y-0 right-2 flex items-center">
-            <HeroIcons.Outline.MagnifyingGlassIcon className="w-5 h-5" />
+            <HeroIcons.Outline.MagnifyingGlassIcon
+              className="w-5 h-5 text-gray-400 dark:text-gray-500"
+            />
           </div>
         </div>
       </div>
       <div
-        className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+        className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8">
         {if shown->Belt.Array.length > 0 {
           shown
           ->Belt.Array.map(({ns, name, el}) => <Icon key={`${ns}.${name}`} ns name> el </Icon>)
           ->React.array
         } else {
-          React.string("Nothing found")
+          <span className="text-gray-700 dark:text-gray-300">
+            {React.string("Nothing found")}
+          </span>
         }}
       </div>
     </div>

@@ -10,4 +10,6 @@ yarn-error.log
 *.js
 !scripts/*.js
 !vite.config.js
+!tailwind.config.js
+!postcss.config.js
 dist/

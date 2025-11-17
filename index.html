@@ -1,42 +1,156 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>@kaiko.io/rescript-heroicons-react</title>
+  <meta name="description" content="Unofficial ReScript binding to @heroicons/react">
+  <link rel="stylesheet" type="text/css" href="./input.css">
   <script defer type="module" src="lib/es6/tests/index.js"></script>
+
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+    // Theme toggle functionality
+    window.addEventListener('DOMContentLoaded', () => {
+      const toggleButton = document.getElementById('theme-toggle');
+
+      toggleButton?.addEventListener('click', () => {
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.theme = 'light';
+        } else {
+          document.documentElement.classList.add('dark');
+          localStorage.theme = 'dark';
+        }
+      });
+    });
+  </script>
 </head>
 
-<body class="font-mono">
-  <h1 class="font-mono text-2xl text-center m-8">
-    <a href="https://gitlab.com/kaiko-systems/rescript-heroicons-react">@kaiko.io/rescript-heroicons-react 2.0.0</a>
-  </h1>
+<body class="font-mono bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
+  <!-- Hero Section -->
+  <header class="py-16 px-8">
+    <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-900 dark:text-gray-100">
+      @kaiko.io/rescript-heroicons-react
+      <span class="block mt-2 text-lg md:text-xl text-gray-600 dark:text-gray-400 font-normal">
+        v3.0.1
+      </span>
+    </h1>
+    <p class="text-center mt-4 text-gray-600 dark:text-gray-400">
+      Unofficial ReScript binding to @heroicons/react
+    </p>
+    <div class="flex justify-center mt-6 space-x-4">
+      <a href="https://gitlab.com/kaiko-systems/rescript-heroicons-react"
+        class="inline-flex items-center px-4 py-2 text-blue-600 dark:text-blue-400 hover:underline">
+        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        View on GitLab
+      </a>
+    </div>
+  </header>
 
-  <section class="m-4 w-3/4 mr-auto ml-auto">
-    <p>Steps to joy.</p>
-    <p>Add it to <code>package.json</code>:</p>
-    <pre
-      class="mt-4 bg-gray-100 text-gray-900 p-4"><span class="mr-4 text-gray-700">&dollar;</span>yarn add @kaiko.io/rescript-heroicons-react</pre>
-    <p>Add it to <code>rescript.json</code></p>
-    <p>Enjoy!</p>
+  <!-- Installation Section -->
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-8 text-gray-900 dark:text-gray-100">
+      Steps to Joy
+    </h2>
+
+    <div class="space-y-6">
+      <!-- Step 1 -->
+      <div class="border border-gray-200 dark:border-gray-700 rounded p-6">
+        <div class="flex items-start">
+          <span
+            class="flex-shrink-0 w-8 h-8 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full flex items-center justify-center font-bold text-sm">
+            1
+          </span>
+          <div class="ml-4 flex-1">
+            <p class="text-gray-900 dark:text-gray-100 mb-3">
+              Add it to <code class="px-1 py-0.5 bg-gray-100 dark:bg-gray-800 text-sm">package.json</code>:
+            </p>
+            <pre class="bg-gray-100 dark:bg-gray-800 rounded p-4 overflow-x-auto">
+              <code class="text-gray-700 dark:text-gray-300">$ yarn add @kaiko.io/rescript-heroicons-react</code>
+            </pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="border border-gray-200 dark:border-gray-700 rounded p-6">
+        <div class="flex items-start">
+          <span
+            class="flex-shrink-0 w-8 h-8 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full flex items-center justify-center font-bold text-sm">
+            2
+          </span>
+          <div class="ml-4 flex-1">
+            <p class="text-gray-900 dark:text-gray-100">
+              Add it to <code class="px-1 py-0.5 bg-gray-100 dark:bg-gray-800 text-sm">rescript.json</code>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="border border-gray-200 dark:border-gray-700 rounded p-6">
+        <div class="flex items-start">
+          <span
+            class="flex-shrink-0 w-8 h-8 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full flex items-center justify-center font-bold text-sm">
+            3
+          </span>
+          <div class="ml-4 flex-1">
+            <p class="text-gray-900 dark:text-gray-100 font-semibold text-lg">
+              Enjoy!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-    <div id="app"> </div>
+  <!-- Icons Gallery Section -->
+  <section class="mx-auto w-full px-8 py-16">
+    <h2 class="text-2xl font-bold mb-8 text-center text-gray-900 dark:text-gray-100">
+      Icon Gallery
+    </h2>
+    <div id="app"
+      class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded p-6 min-h-[400px]">
+      <!-- Icons will be rendered here -->
+    </div>
   </section>
 
-  <section class="m-4 w-3/4 mr-auto ml-auto">
-    <p>Dependencies:</p>
-    <pre class="mt-4 bg-gray-100 text-gray-900 p-4">
-  {
-    "@heroicons/react": "^2.0",
-    "@rescript/react": "0.12.0",
-    "react": "^18.0 | ^19.0",
-    "rescript": "11.1.4"
-  }
+  <!-- Dependencies Section -->
+  <section class="max-w-4xl mx-auto px-4 py-12 pb-20">
+    <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+      Dependencies
+    </h2>
+    <pre class="bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded p-6 overflow-x-auto">
+      <code class="text-gray-700 dark:text-gray-300">
+{
+  "@heroicons/react": "^2.0",
+  "@rescript/react": "0.12.0",
+  "react": "^18.0 | ^19.0",
+  "rescript": "11.1.4"
+}</code>
     </pre>
   </section>
+
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle"
+    class="cursor-pointer fixed bottom-8 right-8 p-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg"
+    aria-label="Toggle theme">
+    <svg class="w-6 h-6 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+    </svg>
+  </button>
 
 </body>
 
