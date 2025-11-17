@@ -45,6 +45,76 @@ module App = {
     }
   }
 
+  module SearchBox = {
+    @react.component
+    let make = (
+      ~query: option<string>,
+      ~namespace: AllIcons.kind,
+      ~onChangeQuery: option<string> => unit,
+      ~onSelectNs: AllIcons.kind => unit,
+    ) => {
+      let onSearchChange = e => {
+        let query = switch (e->ReactEvent.Form.target)["value"] {
+        | val => Some(val)
+        | exception _ => None
+        }
+        onChangeQuery(query)
+      }
+      let value = query
+
+      <div className="flex flex-row gap-4 w-full py-4">
+        // Namespace filter buttons
+        <div className="flex justify-center">
+          <div
+            className="inline-flex rounded-full shadow-sm overflow-clip border border-gray-300 dark:border-gray-600"
+            role="group">
+            <button
+              type_="button"
+              className={`cursor-pointer px-4 py-2 text-sm font-medium ${namespace == #solid
+                  ? "bg-blue-600 dark:bg-blue-500 text-white"
+                  : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"}`}
+              onClick={_ => onSelectNs(#solid)}>
+              {React.string("Solid")}
+            </button>
+            <button
+              type_="button"
+              className={`cursor-pointer px-4 py-2 text-sm font-medium ${namespace == #outline
+                  ? "bg-blue-600 dark:bg-blue-500 text-white"
+                  : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"}`}
+              onClick={_ => onSelectNs(#outline)}>
+              {React.string("Outline")}
+            </button>
+          </div>
+        </div>
+        // Search input
+        <div className="flex flex-col gap-2 w-full">
+          <div className="w-full m-auto relative rounded-md shadow-sm">
+            <input
+              type_="text"
+              name="query"
+              autoComplete="false"
+              ?value
+              className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20
+               bg-white dark:bg-gray-800
+               text-gray-900 dark:text-gray-100
+               ring-1 ring-inset ring-gray-300 dark:ring-gray-600
+               placeholder:text-gray-400 dark:placeholder:text-gray-500
+               focus:ring-1 focus:ring-inset
+               focus:ring-indigo-100 dark:focus:ring-indigo-900 sm:text-sm sm:leading-6"
+              placeholder="Filter"
+              onChange={onSearchChange}
+            />
+            <div className="absolute inset-y-0 right-2 flex items-center">
+              <HeroIcons.Outline.MagnifyingGlassIcon
+                className="w-5 h-5 text-gray-400 dark:text-gray-500"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+  }
+
   type entry = {ns: AllIcons.kind, name: string, el: React.element, words: string}
   let makeEntry: ((AllIcons.kind, string, React.element)) => entry = ((ns, name, el)) => {
     let uncamelized = %re("/([a-z0-9])([A-Z])/g")->Js.String.replaceByRe(name, "$1 $2")
@@ -66,16 +136,15 @@ module App = {
   @react.component
   let make = (~icons: array<(AllIcons.kind, string, React.element)>) => {
     let entries = icons->Array.map(makeEntry)
-    let (state, setState) = React.useState(_ => {
-      entries,
-      namespace: #solid,
-      query: None,
-      fzf: Fzf.make(entries, ~selector=({words}) => words),
-    })
+    let (namespace, setNamespace) = React.useState(_ => #solid)
+    let onSelectNs = ns => setNamespace(_ => ns)
 
-    let filteredByNamespace = state.entries->Array.filter(entry => entry.ns == state.namespace)
+    let (query, setQuery) = React.useState(_ => None)
+    let onChangeQuery = query => setQuery(_ => query)
 
-    let shown = switch state.query {
+    let filteredByNamespace = entries->Array.filter(entry => entry.ns == namespace)
+
+    let shown = switch query {
     | Some("") | None => filteredByNamespace
     | Some(query) => {
         let searchableFzf = Fzf.make(filteredByNamespace, ~selector=({words}) => words)
@@ -84,62 +153,8 @@ module App = {
       }
     }
 
-    let onSearchChange = e => {
-      let query = switch (e->ReactEvent.Form.target)["value"] {
-      | val => Some(val)
-      | exception _ => None
-      }
-      setState(_ => {...state, query})
-    }
-
-    <div className="font-mono">
-      /// Search input
-      <div className="mb-10 flex flex-col gap-2 mt-2">
-        <div className="w-full m-auto relative rounded-md shadow-sm">
-          <input
-            type_="text"
-            name="query"
-            autoComplete="false"
-            className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20
-               bg-white dark:bg-gray-800
-               text-gray-900 dark:text-gray-100
-               ring-1 ring-inset ring-gray-300 dark:ring-gray-600
-               placeholder:text-gray-400 dark:placeholder:text-gray-500
-               focus:ring-1 focus:ring-inset
-               focus:ring-indigo-100 dark:focus:ring-indigo-900 sm:text-sm sm:leading-6"
-            placeholder="Filter"
-            onChange={onSearchChange}
-          />
-          <div className="absolute inset-y-0 right-2 flex items-center">
-            <HeroIcons.Outline.MagnifyingGlassIcon
-              className="w-5 h-5 text-gray-400 dark:text-gray-500"
-            />
-          </div>
-        </div>
-        // Namespace filter buttons
-        <div className="flex justify-center">
-          <div
-            className="inline-flex rounded-full shadow-sm overflow-clip border border-gray-300 dark:border-gray-600"
-            role="group">
-            <button
-              type_="button"
-              className={`cursor-pointer px-4 py-2 text-sm font-medium ${state.namespace == #solid
-                  ? "bg-blue-600 dark:bg-blue-500 text-white"
-                  : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"}`}
-              onClick={_ => setState(state => {...state, namespace: #solid})}>
-              {React.string("Solid")}
-            </button>
-            <button
-              type_="button"
-              className={`cursor-pointer px-4 py-2 text-sm font-medium ${state.namespace == #outline
-                  ? "bg-blue-600 dark:bg-blue-500 text-white"
-                  : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"}`}
-              onClick={_ => setState(state => {...state, namespace: #outline})}>
-              {React.string("Outline")}
-            </button>
-          </div>
-        </div>
-      </div>
+    <div className="font-mono py-2">
+      <SearchBox query namespace onChangeQuery onSelectNs />
       <div
         className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8">
         {if shown->Array.length > 0 {
