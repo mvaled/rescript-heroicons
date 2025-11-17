@@ -39,6 +39,7 @@
         "react-copy-to-clipboard": "^5.1.0",
         "react-dom": "^18.2.0",
         "rescript": "^11.1.4",
+        "@rescript/core": "1.6.1",
         "tailwindcss": "^4.1.17",
         "@tailwindcss/vite": "^4.1.17",
         "vite": "^7.2.2"

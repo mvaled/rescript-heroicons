@@ -15,7 +15,8 @@
         }
     ],
     "bsc-flags": [
-        "-bs-super-errors"
+        "-bs-super-errors",
+        "-open RescriptCore"
     ],
     "package-specs": [
         {
@@ -26,6 +27,7 @@
         }
     ],
     "bs-dependencies": [
-        "@rescript/react"
+        "@rescript/react",
+        "@rescript/core"
     ]
 }
